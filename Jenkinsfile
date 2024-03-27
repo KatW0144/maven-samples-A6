@@ -18,5 +18,11 @@ pipeline {
       }
     }
 
+    stage('end') {
+      steps {
+        bat 'git bisect reset'
+      }
+    }
+
   }
 }
